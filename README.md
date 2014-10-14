@@ -23,7 +23,7 @@
 - Mozilla Firefox 32
 - Google Chrome 37
 
-### 今後について
+## 今後について
 
 今はまだ全然できてないので・・・
 

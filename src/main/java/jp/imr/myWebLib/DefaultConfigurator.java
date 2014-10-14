@@ -4,6 +4,10 @@ import javax.websocket.HandshakeResponse;
 import javax.websocket.server.HandshakeRequest;
 import javax.websocket.server.ServerEndpointConfig;
 
+/**
+ * Configurator.
+ * @author ima-ryu
+ */
 public class DefaultConfigurator extends ServerEndpointConfig.Configurator {
 
 	protected static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(DefaultConfigurator.class);

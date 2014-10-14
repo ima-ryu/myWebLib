@@ -26,10 +26,13 @@ import javax.websocket.server.ServerEndpoint;
 public class DefaultEndpoint {
 	
 	protected static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(DefaultEndpoint.class);
-	
 	private static Set<Session> peers = Collections.synchronizedSet(new HashSet<Session>());
 	public static final long TIMEOUT = TimeUnit.MINUTES.toMillis(30);
 
+	public DefaultEndpoint() {
+		LOG.debug("construct: {}", toString());
+	}
+	
 	@OnOpen
 	public void onOpen(Session session, EndpointConfig config) throws IOException {
 		LOG.debug("open: {}", session);
